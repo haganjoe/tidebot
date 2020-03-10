@@ -1,0 +1,13 @@
+{
+	"name": "CloudNetwork",
+	"version": "1.0.0",
+	"description": "Bot for Cloud Network server",
+	"main": "index.js",
+	"author": "Atoo",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"discord.js": "^11.6.2"
+	}
+}
