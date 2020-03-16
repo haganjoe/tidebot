@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
  exports.run = async(client, message) => {
 
-  const PREFIX='_';
+  //const PREFIX='_';
   if(message.author.bot)return;
-  if(!message.content.startsWith(PREFIX)) return;
+  if(!message.content.startsWith(process.env.PREFIX)) return;
   // Get the command by getting the first part of the message and removing  the prefix.
-  var command = message.content.split(" ")[0].slice(PREFIX.length);
+  var command = message.content.split(" ")[0].slice(process.env.PREFIX.length);
   // Get the params in an array of arguments to be used in the bot
 
   var params = message.content.split(" ").slice(1);
